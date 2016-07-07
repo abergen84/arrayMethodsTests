@@ -145,10 +145,12 @@ var results = customers
     .map(function(obj){
         // YOUR CODE HERE
         console.log(obj.first + ' ' + obj.last)
-            var rObj = {}
-            rObj[obj.fullname] = obj.first + ' ' + obj.last
-            console.log(rObj)
-           return rObj
+        obj.fullname = obj.first + ' ' + obj.last
+        console.log(obj.fullname)
+        return obj
+            // var rObj = {}
+            // rObj[obj.fullname] = obj.first + ' ' + obj.last
+            // console.log(rObj)
     })
     .sort(function(a, b){
         // YOUR CODE HERE
